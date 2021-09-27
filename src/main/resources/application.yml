@@ -1,0 +1,20 @@
+spring:
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main #重启目录
+  mvc:
+    hiddenmethod:
+      filter:
+  datasource:
+    password: 123456
+    url: jdbc:mysql://localhost:3306/a
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+
+    show-sql: true
+#    database-platform: org.hibernate.dialect.MySQL5INnoDBialect
+#      use-new-id-generator-mappings: true
